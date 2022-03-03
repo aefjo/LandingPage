@@ -1,0 +1,113 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing : border-box;
+}
+
+body {
+    font-family: serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    min-height: 100vh;
+}
+
+section video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 40px;
+}
+
+header a {
+    position: relative;
+}
+
+header a img {
+    width: 200px;
+}
+
+header nav {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    gap: 50px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+header nav a:hover {
+    color: skyblue;
+}
+
+form {
+    position: relative;
+}
+
+form input[type="email"] {
+    padding: 10px;
+}
+
+form button {
+    padding: 10px;
+    background-color: dodgerblue;
+    outline: none;
+}
+
+form button a {
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width:960px) {
+    header {
+        padding: 0 20px;
+    }
+
+    header a img {
+        width: 100px;
+    }
+
+    header nav {
+        gap: 30px;
+    }
+}
+
+@media (max-width:480px) {
+    header {
+        padding: 0 20px;
+    }
+
+    header a img {
+        width: 100px;
+    }
+
+    header nav {
+        gap: 30px;
+    }
+}
+
